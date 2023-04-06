@@ -1,3 +1,4 @@
 In each of the files present in the above directories, the following structure has been used to store the data.
 
+
 The .pkl files when loaded on python will result in "list" type objects and the length of these lists will be equal to the number of bondlengths considered to evaluate these quantities. The files corresponding to energies and time are stored as list of converged energies and the time required for converegence for each bondlength considered. The files named as "params" contain excitation parameters of UCC anstaz at each iteration of minimization for each bondlength. So for example, LiH_SA_1_SAF_1_params.pkl (or equivalently LiH_SA_1_ZAF_1_params.pkl) file corresponds to the parameters at each iteration of minimization at each bond length of interest, obtained by performing SA-SAF-UCCSD-VQE. So these files are going to be a list of arrays where each array has dimensions: (no_of_iterations, no_of_parametrs).
